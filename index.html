@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="%VITE_FAVICON_URL%" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <nav class="navbar mb-4" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="/" class="button is-ghost"><span class="icon"><i
+            class="fa-solid fa-chess-queen"></i></span><span>learn-chess.org</span></a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span
+          aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-ghost js-modal-trigger" data-target="modal-js-example"><span class="icon"><i
+                  class="fa-solid fa-circle-user"></i></span><span>login</span></a>
+            <a id="toggle-dark" class="button is-ghost" title="Toggle Dark Mode"><span class="icon"><i
+                  class="fa-solid fa-moon"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container is-max-widescreen">
+    <div class="notification is-info is-light"><button class="delete"></button>
+      <p> dismissable cookie based site notification div...</p>
+    </div>
+    <div class="content">
+      <h1 class="text-3xl font-bold underline has-text-centered">
+        Hello world!
+      </h1>
+
+      <!-- board -->
+      <div id="board" style="width: 720px; height: 720px;"></div>
+      <div id="fen-display" class="p-4 has-text-centered">
+        <code id="fen-string" class="fen-box">rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</code>
+      </div>
+
+      <div class="buttons is-centered">
+        <button class="button"><i class="fa-solid fa-bars"></i></button>
+        <button class="button"><i class="fa-solid fa-circle-question"></i></button>
+        <button id="prevBtn" class="button"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="nextBtn" class="button"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <!-- board -->
+
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box p-2">
+        <article class="message is-primary">
+          <div class="message-header">
+            <p>passwordless login</p>
+            <button class="delete" aria-label="delete"></button>
+          </div>
+          <div class="message-body">
+            <div class="field">
+              <label class="label">email</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="enter your email">
+              </div>
+            </div>
+            <div class="buttons">
+              <a class="button is-primary">send login link</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- <button class="modal-close is-large" aria-label="close"></button> -->
+  </div><!-- modal -->
+
+  <!-- js -->
+  <script src="https://kit.fontawesome.com/5a2a5f3f4a.js" crossorigin="anonymous"></script>
+  <script type="module" src="/_main.js"></script>
+</body>
+
+</html>
