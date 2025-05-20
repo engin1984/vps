@@ -8,7 +8,7 @@ $LightSalmon: #FFA07A;
 
 // ######### Bulma Customization
 @use "bulma/sass" with (
-  $family-primary: '"Jost", sans-serif',
+  $family-primary: '"Work Sans", sans-serif',
   $primary: $LightSalmon,
   $link: $RoyalBlue,
   $control-border-width: 0px,
@@ -23,6 +23,9 @@ $LightSalmon: #FFA07A;
 
 // ######### Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 // ######### Dark Mode
 body.dark {
